@@ -13,11 +13,18 @@ wget http://node-arm.herokuapp.com/node_latest_armhf.deb
 sudo dpkg -i node_latest_armhf.deb
 sudo npm install rpi-gpio express
 
-./kur.sh
+Kurulum bittikten sonra http://dashboard.arest.io/ adresine girilerek kullanıcı adı ve şifre ile bir dashboard oluşturuyoruz.
+Önemli olan app.js dosyasının içindeki id ve name ile aynı id ve name değerini kullanıyoruz böylece birbirlerini tanıyorlar.
 
-Çalıştırmak için
+// Set unique ID
+piREST.set_id('p5dgwt');
+piREST.set_name('pi_cloud');
+
+
+sistemi çalıştırmak için
 sudo node app.js
 
-Başlangıçta otomatik Çalıştırmak için
+Raspberry pi her açıldığında otomatik çalıştırmak için
+
 
 
