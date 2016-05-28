@@ -22,6 +22,7 @@ piREST.set_name('pi_cloud');
 
 
 sistemi çalıştırmak için
+
 sudo node app.js
 
 Raspberry pi her açıldığında otomatik çalıştırmak için
